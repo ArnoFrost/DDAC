@@ -1,5 +1,7 @@
 # 变更日志 / Changelog
 
+Languages: [English](CHANGELOG.en.md) | 中文
+
 本文档记录DDAC项目的所有重要变更。
 
 ---
@@ -82,3 +84,6 @@
 **项目地址**：[GitHub - DDAC](https://github.com/ArnoFrost/DDAC)
 **许可协议**：CC BY-SA 4.0  
 **维护者**：用户 + AI 协作
+
+---
+Languages: [English](CHANGELOG.en.md) | 中文

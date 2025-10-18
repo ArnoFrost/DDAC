@@ -14,6 +14,8 @@ tags: [DDAC, AI协作, 知识管理, 方法论]
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Obsidian](https://img.shields.io/badge/Obsidian-Compatible-purple)](https://obsidian.md/)
 
+**Languages**: [English](README.en.md) | 中文
+
 ---
 
 ## 🎯 什么是DDAC？
@@ -108,6 +110,63 @@ DDAC模式：
 - 应用 `草稿精炼` 与 `标签与双链` 模板 → 完成微成果 → 提交 PR 或归档
 
 > 结合 DDAC 的持久化规范系统，LWP 为内容创作提供“轻量却严谨”的协作路径。
+
+---
+
+## 🧩 体系架构一图览
+
+为了更好地理解DDAC，我们将其拆解为“理论内核”与“项目实践”两张图。
+
+### 1. DDAC 范式：理论内核
+
+这张图展示了DDAC最核心的、不涉及任何具体工具的哲学思想——一个由四个层次构成的、能自我进化的闭环。
+
+```mermaid
+graph TD
+    subgraph "DDAC 范式：演进式闭环"
+        A -- "指导 (Guides)" --> B;
+        B -- "生成 (Generates)" --> C;
+        C -- "暴露问题 (Reveals Gaps)" --> D;
+        D -- "修正 (Refines)" --> A;
+    end
+
+    A["1. 规范层 (Specification)<br>人类智慧定义'元Prompt'"]
+    B["2. 执行层 (Execution)<br>AI解读规范，执行任务"]
+    C["3. 反馈层 (Feedback)<br>结构化的输出与报告"]
+    D["4. 演进层 (Evolution)<br>人类分析反馈，优化规范"]
+```
+
+### 2. GitHub 项目：实践落地
+
+这张图展示了DDAC的理论，是如何在我们这个具体的GitHub开源项目中被实现的。
+
+```mermaid
+graph TD
+    subgraph "DDAC GitHub 项目架构"
+        A -- "指导" --> B
+        B -- "执行并更新" --> C
+        C -- "提供反馈" --> D
+        D -- "通过PR/Issue优化" --> A
+
+        subgraph "外部输入 (Inputs)"
+            T --> C
+            I --> D
+        end
+    end
+
+    A["规范层 (Specification)<br>📜 `docs/*`"]
+    B["执行层 (Execution)<br>🤖 AI 助手"]
+    C["反馈层 (Feedback)<br>📝 任务路书 & 报告"]
+    D["演进层 (Evolution)<br>👨‍💻 设计师 & 社区"]
+    T["📂 `templates/*`<br>提供任务模板"]
+    I["💬 GitHub Issues<br>社区反馈"]
+```
+
+- 说明：
+  - **规范文档（docs/）**：面向 AI 与使用者的规范与实施文档，提供“长期记忆”和协作标准。
+  - **模板（templates/）**：可复用的执行模板，驱动轻量路书与报告产出。
+  - **仓库基座**：保障版本可追踪与开源合规的基础文件。
+  - **Issues 与 Discussions**：社区协作与反馈入口，推动规范与模板的持续优化。
 
 ---
 
