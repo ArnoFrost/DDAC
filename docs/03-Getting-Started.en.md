@@ -22,3 +22,9 @@ Languages: [中文](03-实施指南.md) | English
 ## Recommended Workflow (LWP)
 - Minimal structure + clear intent + short iterations
 - Use Micro-Routebook templates to produce small deliverables in 15-30 minutes
+
+---
+
+## Note on Metrics and Privacy
+- Any metrics/examples in public docs must use placeholders and reference [Methodology](./methodology.en.md).
+- Do not include real personal/organization names or private paths; use neutral placeholders instead.

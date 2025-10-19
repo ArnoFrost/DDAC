@@ -21,3 +21,9 @@ Languages: [中文](02-架构设计.md) | English
 
 ## Directory Structure (Overview)
 Refer to project README for the tree; docs and templates are public, `.internal` is private.
+
+---
+
+## Note on Metrics and Privacy
+- Any metrics/examples in public docs must use placeholders and reference [Methodology](./methodology.en.md).
+- Do not include real personal/organization names or private paths; use neutral placeholders instead.
