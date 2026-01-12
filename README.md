@@ -81,18 +81,16 @@ DDAC 协作模式：用户 ←→ [规范文档系统] ←→ AI
 
 ### 🚀 落地实现：AI-TASK
 
-> 想直接上手？试试 DDAC 的 MVP 实现
-
-**[AI-TASK](https://github.com/ArnoFrost/AI-TASK)** 是 DDAC 方法论在"单人多项目任务管理"场景下的落地实践。
+**[AI-TASK](https://github.com/ArnoFrost/AI-TASK)** 是基于 DDAC 方法论构建的任务管理系统，专为单人多项目、跨设备协作场景设计。
 
 ```mermaid
 graph LR
-    subgraph "DDAC 方法论"
-        D1[📚 理论框架]
+    subgraph "DDAC"
+        D1[📚 方法论]
         D2[🏗️ 四层架构]
     end
     
-    subgraph "AI-TASK 落地"
+    subgraph "AI-TASK"
         A1[📂 项目结构]
         A2[⚡ 斜杠命令]
         A3[📋 任务模板]
@@ -100,6 +98,7 @@ graph LR
     
     D1 -->|指导| A1
     D2 -->|实现| A2
+    D2 -->|驱动| A3
     
     style D1 fill:#e1f5fe
     style D2 fill:#e1f5fe
@@ -108,13 +107,11 @@ graph LR
     style A3 fill:#fff3e0
 ```
 
-| 对比 | DDAC | AI-TASK |
-|------|------|---------|
-| 定位 | 方法论/理论框架 | 落地实现/MVP |
-| 侧重 | 知识管理、规范体系 | 任务管理、跨项目协作 |
-| 适合 | 理解设计哲学 | 直接上手使用 |
-
-> 💡 如果你想了解背后的设计哲学，请阅读 DDAC；如果你想直接上手使用，从 [AI-TASK](https://github.com/ArnoFrost/AI-TASK) 开始。
+| | DDAC | AI-TASK |
+|:---:|------|---------|
+| 📖 | 方法论 · 理论框架 | 落地实现 · MVP |
+| 🎯 | 知识管理、规范体系设计 | 任务管理、跨项目协作 |
+| 👤 | 理解设计哲学 | 直接上手使用 |
 
 ---
 
@@ -530,7 +527,14 @@ git push origin feature/AmazingFeature
 |------|------|
 | 理论 | [Zettelkasten](https://zettelkasten.de/)、[Building a Second Brain](https://www.buildingasecondbrain.com/)、[Agentic Design Patterns](https://github.com/Mathews-Tom/Agentic-Design-Pattern) |
 | 工具 | [Obsidian](https://obsidian.md/)、[腾讯云开发助手](https://www.codebuddy.ai/) |
-| 衍生 | [AI-TASK](https://github.com/ArnoFrost/AI-TASK) - DDAC 方法论的任务管理 MVP 实现 |
+
+---
+
+## 🔗 相关项目
+
+| 项目 | 描述 |
+|------|------|
+| [![AI-TASK](https://img.shields.io/badge/AI--TASK-MVP%20实现-orange?style=flat-square&logo=github)](https://github.com/ArnoFrost/AI-TASK) | DDAC 方法论的落地实践，面向单人多项目的任务管理系统 |
 
 ---
 
