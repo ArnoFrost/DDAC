@@ -14,13 +14,14 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Version](https://img.shields.io/badge/version-1.1.0-green.svg?style=flat-square)](CHANGELOG.md)
 [![Obsidian](https://img.shields.io/badge/Obsidian-Compatible-purple?style=flat-square&logo=obsidian)](https://obsidian.md/)
+[![AI-TASK](https://img.shields.io/badge/MVP-AI--TASK-orange?style=flat-square&logo=task)](https://github.com/ArnoFrost/AI-TASK)
 
 <p>
   <a href="#-快速开始">快速开始</a> •
+  <a href="#-落地实现ai-task">AI-TASK</a> •
   <a href="#️-四层架构详解">架构</a> •
   <a href="#-核心工具元prompt库">元Prompt库</a> •
-  <a href="#-文档导航">文档</a> •
-  <a href="./CHANGELOG.md">更新日志</a>
+  <a href="#-文档导航">文档</a>
 </p>
 
 </div>
@@ -31,6 +32,7 @@
 <summary>📖 目录 / Table of Contents</summary>
 
 - [什么是 DDAC](#-什么是-ddac)
+- [落地实现：AI-TASK](#-落地实现ai-task)
 - [四层架构详解](#️-四层架构详解)
 - [快速开始](#-快速开始)
 - [核心工具：元Prompt库](#-核心工具元prompt库)
@@ -76,6 +78,43 @@ DDAC 协作模式：用户 ←→ [规范文档系统] ←→ AI
 | 可复用性 | 低，需重复说明 | 高，一次定义多次使用 |
 | 协作效率 | 每次都要详细指导 | AI 自动理解规范 |
 | 任务接续 | 困难，需重新说明 | 轻松，读取路书即可 |
+
+### 🚀 落地实现：AI-TASK
+
+> 想直接上手？试试 DDAC 的 MVP 实现
+
+**[AI-TASK](https://github.com/ArnoFrost/AI-TASK)** 是 DDAC 方法论在"单人多项目任务管理"场景下的落地实践。
+
+```mermaid
+graph LR
+    subgraph "DDAC 方法论"
+        D1[📚 理论框架]
+        D2[🏗️ 四层架构]
+    end
+    
+    subgraph "AI-TASK 落地"
+        A1[📂 项目结构]
+        A2[⚡ 斜杠命令]
+        A3[📋 任务模板]
+    end
+    
+    D1 -->|指导| A1
+    D2 -->|实现| A2
+    
+    style D1 fill:#e1f5fe
+    style D2 fill:#e1f5fe
+    style A1 fill:#fff3e0
+    style A2 fill:#fff3e0
+    style A3 fill:#fff3e0
+```
+
+| 对比 | DDAC | AI-TASK |
+|------|------|---------|
+| 定位 | 方法论/理论框架 | 落地实现/MVP |
+| 侧重 | 知识管理、规范体系 | 任务管理、跨项目协作 |
+| 适合 | 理解设计哲学 | 直接上手使用 |
+
+> 💡 如果你想了解背后的设计哲学，请阅读 DDAC；如果你想直接上手使用，从 [AI-TASK](https://github.com/ArnoFrost/AI-TASK) 开始。
 
 ---
 
@@ -491,6 +530,7 @@ git push origin feature/AmazingFeature
 |------|------|
 | 理论 | [Zettelkasten](https://zettelkasten.de/)、[Building a Second Brain](https://www.buildingasecondbrain.com/)、[Agentic Design Patterns](https://github.com/Mathews-Tom/Agentic-Design-Pattern) |
 | 工具 | [Obsidian](https://obsidian.md/)、[腾讯云开发助手](https://www.codebuddy.ai/) |
+| 衍生 | [AI-TASK](https://github.com/ArnoFrost/AI-TASK) - DDAC 方法论的任务管理 MVP 实现 |
 
 ---
 
